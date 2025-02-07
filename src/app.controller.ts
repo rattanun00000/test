@@ -5,7 +5,7 @@ export class AppController {
   @Get()
   getWelcome(): { message: string } {
     return {
-      message: 'Welcome to Movie Service API'
+      message: '🎬 Welcome to Nextflix Clone Service API 🍿'
     };
   }
 }
