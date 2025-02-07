@@ -2,7 +2,7 @@ import { Injectable } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
 import { IMovieRepository } from "src/movies/domain/repositories/movie.repository.interface";
 import { HttpService } from '@nestjs/axios';
-import { Movie, MovieCollection } from "src/movies/domain/entities/movie.entity";
+import { Movie, MovieCollection } from "../../domain/entities/movie.entity";
 import { lastValueFrom, map } from "rxjs";
 // infrastructure/adapters/tmdb-movie.adapter.ts
 @Injectable()

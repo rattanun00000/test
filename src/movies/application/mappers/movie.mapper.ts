@@ -1,4 +1,4 @@
-import { Movie, MovieCollection } from "src/movies/domain/entities/movie.entity";
+import { Movie, MovieCollection } from "../../domain/entities/movie.entity";
 import { MovieDto, MovieResponseDto } from "../dtos/movie.dto";
 
 // application/mappers/movie.mapper.ts
