@@ -2,6 +2,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { MoviesModule } from './movies/movies.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -10,5 +11,6 @@ import { MoviesModule } from './movies/movies.module';
     }),
     MoviesModule,
   ],
+  controllers: [AppController],
 })
 export class AppModule {}
