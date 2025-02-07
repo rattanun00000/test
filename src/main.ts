@@ -10,8 +10,16 @@ async function bootstrap() {
 
   app.enableCors({
     origin: allowedOrigins, // กำหนด domain ที่อนุญาตฟหก
-    methods: ['GET'], // กำหนด HTTP methods ที่อนุญาต
+    // methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], // กำหนด HTTP methods ที่อนุญาต
     credentials: true, // อนุญาตให้ส่ง credentials (cookies, headers)
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+    allowedHeaders: [
+      'Origin',
+      'X-Requested-With',
+      'Content-Type',
+      'Accept',
+      'Authorization',
+    ],
   });
 
   await app.listen(process.env.PORT ?? 8000);
