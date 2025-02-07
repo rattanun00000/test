@@ -10,7 +10,7 @@ async function bootstrap() {
 
   app.enableCors({
     origin: allowedOrigins, // กำหนด domain ที่อนุญาตฟหก
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], // กำหนด HTTP methods ที่อนุญาต
+    methods: ['GET'], // กำหนด HTTP methods ที่อนุญาต
     credentials: true, // อนุญาตให้ส่ง credentials (cookies, headers)
   });
 
